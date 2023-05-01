@@ -1,0 +1,105 @@
+﻿<style>
+   h1 {text-align: center;}
+   p {text-align: center;}
+    
+   div {
+	   text-align: center;
+	   }
+.div-1 {
+         background-image: url("/pictures/home.jfif");
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-size: 100% 100%;
+		 height: 350px;
+		 }
+   .fill {object-fit: fill;}
+   .contain {object-fit: contain;}
+   .cover {object-fit: cover;}
+   .scale-down {object-fit: scale-down;}
+   .none {object-fit: none;}
+   
+   textarea{display:inline-block;
+            vertical-align:middle; 
+            margin-top: 280px;
+			width: 200px;
+			padding: 5px;}
+	.div-2 {
+			text-align: left;
+			margin-top: 25px;
+			 }
+	.div-3 {
+			width :40%;
+			margin-right: 5px;
+			text-align: left;
+			display: inline-block;
+			padding: 10px;
+			 }
+	.container {position: relative; overflow: hidden;}
+	div-left {float: left;width: 200px;padding: 50px"}
+	div-middle {float: right;padding: 50px"}
+	div-right {float: none;overflow: hidden;padding: 50px"}
+	#wrapper{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.div-style{ display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+#wrapper{
+ display:flex;
+ width: 100%;
+ justify-content: space-around;
+ }
+.party{
+    display:inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+    width: 33.33%;
+}
+.party-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 0;
+    border: solid black 2px;
+    padding: 0.3%;
+    padding-top: 100%;
+    margin: 2%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.party img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+input[type = button] {
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+    margin: 2px 1px;
+    cursor: pointer;
+}
+</style>
+<h2 >Emlak</h2>
+<div class="div-1">
+    <textarea >Enter Address or Code...</textarea>
+</div>
+<div class="div-2" >
+   <h4 >Most visited</h2>     
+</div>
+<div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+        <li><div class="div-3"><img src="~/pictures/1.jfif"/><h4 >$220000</h4><h5 >Erzurum mah. yeni Ankara sk. 11/8</h5></div></li> 
+		<li><div class="div-3"><img src="~/pictures/2.jfif"/><h4 >$240000</h4><h5 >Ziraat, Shtç Ömer Halısdemır Blv 28/B</h5></div></li> 
+        <li><div class="div-3"><img src="~/pictures/3.jfif"/><h4 >$235000</h4><h5 >Kavacık Subayevleri, Sht. Makblue Sk.52/A</h5></div></li>
+    </ul>
+</div>
