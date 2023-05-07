@@ -13,8 +13,9 @@ namespace EmlakProject.Services.Bussiness
         public int indexLogin = 0;
         public bool Authenticate(UserModel user)
         {
-            if (user != null)
+            if (user.userEmail != null && user.userPassword != null)
                 return daoService.FindByUser(user);
+            
             else
             {
                 indexLogin = 1;

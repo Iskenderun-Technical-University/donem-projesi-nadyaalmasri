@@ -15,16 +15,16 @@ namespace EmlakProject.Controllers
         {
             return View("Login");
         }
-        public ActionResult Login(UserModel userModel)
-        {
-            //return "Results UserName = " + userModel.Username + " PW = " + userModel.Password;
-            SecurityService securityService = new SecurityService();
-            Boolean success = securityService.Authenticate(userModel);
+        //public ActionResult Login(UserModel userModel)
+        //{
+        //    //return "Results UserName = " + userModel.Username + " PW = " + userModel.Password;
+        //    SecurityService securityService = new SecurityService();
+        //    Boolean success = securityService.Authenticate(userModel);
 
-            if (success)
-                return View("LoginSuccess", userModel);
-            else
-                return View("LoginFailure");
-        }
+        //    if (success)
+        //        return View("LoginSuccess", userModel);
+        //    else
+        //        return View("LoginFailure");
+        //}
     }
 }
